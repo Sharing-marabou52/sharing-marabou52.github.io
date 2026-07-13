@@ -3,58 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alhasan Abdulrazzaq — IT & Security</title>
+  <title>Alhasan Abdulrazzaq — IT Support & Security</title>
+  <meta name="description" content="IT professional in Chicago. Help desk, networking, and security. B.S. Information Technology, Arizona State University.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Alhasan Abdulrazzaq</h1>
-    <p>IT Service Desk Specialist — networking, cloud, and security.</p>
-  </header>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <span class="sidebar__mark">AA</span>
+      <div>
+        <strong>Alhasan Abdulrazzaq</strong>
+        <span class="sidebar__role">IT &amp; Security</span>
+      </div>
+    </div>
 
-  <main>
-    <section>
-        <h2>About</h2>
-            <p>
-                I hold a B.S. in Information Technology from Arizona State University
-                and nearly two years of hands-on IT experience supporting Windows,
-                Linux, and macOS environments — POS systems, workstations, LAN/WAN
-                connectivity, and the users who depend on all of it.
-            </p>
-            <p>
-                I currently work in Patient Access at Endeavor Health, handling patient
-                data across multiple EHR systems under strict HIPAA requirements. It's
-                taught me what most IT candidates never learn: how clinical staff
-                actually use the systems we support, and what it costs them when those
-                systems fail.
-            </p>
-            <p>
-                I'm looking to return to IT full time — help desk, systems, or network
-                support. I keep a home lab running Kali Linux, AWS environments, and
-                Cisco network simulations, because the fastest way to understand a
-                system is to build it and then try to break it.
-            </p>
+    <nav class="sidebar__nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="sidebar__resume" href="resume.pdf">Résumé</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="content">
+
+    <section class="hero" id="home">
+      <p class="eyebrow">Chicago, Illinois</p>
+      <h1>Alhasan Abdulrazzaq</h1>
+      <p class="hero__role">IT Support · Networking · Security</p>
+      <p class="hero__lede">
+        B.S. in Information Technology from Arizona State University, with
+        hands-on experience supporting Windows, Linux, and macOS environments.
+        I diagnose problems, fix systems, and keep people working.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contact">Get in touch</a>
+        <a class="btn" href="resume.pdf">Download résumé</a>
+      </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <article>
-        <h3>Enterprise Multi-LAN Internetwork</h3>
-    <p>
-      A three-LAN enterprise network (cellular, Wi-Fi, wired/VoIP) connected
-      over a serial WAN with NAT overload. Solved a double-NAT issue with an
-      extended ACL and deployed VoIP on a 2811 router running CME.
-    </p>
-    <p><strong>Cisco Packet Tracer · NAT · ACLs · VoIP</strong></p>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm an IT professional with nearly two years of hands-on support
+        experience across Windows, Linux, and macOS — POS systems, workstations,
+        LAN/WAN connectivity, and the people who depend on all of it. I hold a
+        B.S. in Information Technology from Arizona State University.
+      </p>
+      <p>
+        I currently work in Patient Access at Endeavor Health, managing patient
+        data across multiple EHR systems under strict HIPAA requirements. It's
+        taught me something most IT candidates never learn: how clinical staff
+        actually use the systems we support, and what it costs them when those
+        systems fail.
+      </p>
+      <p>
+        I'm returning to IT full time — help desk, systems, or network support.
+        I keep a home lab running Kali Linux, AWS environments, and Cisco network
+        simulations, because the fastest way to understand a system is to build
+        it and then try to break it.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Support</h3>
+          <ul>
+            <li>Help desk &amp; ticket escalation</li>
+            <li>Remote desktop support (RDP)</li>
+            <li>Active Directory</li>
+            <li>Hardware &amp; software troubleshooting</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Systems</h3>
+          <ul>
+            <li>Windows 10/11, Windows Server</li>
+            <li>Linux (Kali, Ubuntu)</li>
+            <li>macOS</li>
+            <li>Clover POS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Networking</h3>
+          <ul>
+            <li>TCP/IP, DNS, DHCP</li>
+            <li>VPN &amp; LAN/WAN</li>
+            <li>Network troubleshooting</li>
+            <li>Firewall &amp; access control</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Cloud &amp; Security</h3>
+          <ul>
+            <li>AWS foundations</li>
+            <li>Cloud deployment models</li>
+            <li>Nmap</li>
+            <li>HIPAA data handling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="entry">
+        <div class="entry__head">
+          <h3>Information Technology Specialist</h3>
+          <span class="entry__date">Apr 2021 – Dec 2022</span>
+        </div>
+        <p class="entry__org">Smoke Station · Urbana, IL</p>
+        <ul>
+          <li>Provided end-to-end IT support for Clover POS systems, Windows workstations, and LAN/WAN connectivity</li>
+          <li>Diagnosed and resolved hardware and software incidents, minimizing downtime for business-critical operations</li>
+          <li>Configured network settings, file sharing, and user permissions across multi-user environments</li>
+          <li>Implemented access control policies and data protection measures</li>
+          <li>Trained staff on troubleshooting, reducing recurring tickets</li>
+        </ul>
       </article>
-      
-    </section>
-  </main>
 
-  <footer>
-    <p>Chicago, IL</p>
-  </footer>
+      <article class="entry">
+        <div class="entry__head">
+          <h3>Patient Access Representative</h3>
+          <span class="entry__date">Feb 2024 – Present</span>
+        </div>
+        <p class="entry__org">Endeavor Health · Skokie, IL</p>
+        <ul>
+          <li>Manage patient registration and insurance verification across multiple EHR systems in a fast-paced ED</li>
+          <li>Enter and validate sensitive patient data under strict HIPAA compliance</li>
+          <li>Triage urgent cases and coordinate patient flow with clinical teams</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3>Enterprise Multi-LAN Internetwork</h3>
+          <p>
+            A three-LAN enterprise network — cellular, Wi-Fi, and wired/VoIP —
+            connected over a serial WAN with NAT overload. Resolved a double-NAT
+            failure using an extended ACL and deployed VoIP on a 2811 router
+            running CME.
+          </p>
+          <p class="card__tags">Packet Tracer · NAT · ACLs · VoIP · NIST CSF</p>
+        </article>
+
+        <article class="card">
+          <h3>AWS High-Availability Build</h3>
+          <p>
+            A resilient web tier on AWS: Windows EC2 instances behind an
+            Application Load Balancer, DNS through Route 53, monitoring via
+            CloudWatch, and state in DynamoDB — built for failover, not just uptime.
+          </p>
+          <p class="card__tags">EC2 · ALB · Route 53 · CloudWatch · DynamoDB</p>
+        </article>
+
+        <article class="card">
+          <h3>Security Home Lab</h3>
+          <p>
+            A Kali Linux environment running OWASP Juice Shop in Docker as a legal,
+            intentionally vulnerable target. Practicing reconnaissance and common
+            web vulnerability classes to understand how systems actually fail.
+          </p>
+          <p class="card__tags">Kali Linux · OWASP · Docker · Nmap</p>
+        </article>
+
+        <article class="card">
+          <h3>IT Asset Management System</h3>
+          <p>
+            A full systems analysis and design project: requirements with swim-lane
+            process maps, wireframes, and network topology for an asset-tracking
+            platform with SSO + 2FA and role-based access control.
+          </p>
+          <p class="card__tags">Systems Design · RBAC · SSO + 2FA · SQL</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article class="entry">
+        <div class="entry__head">
+          <h3>B.S. Information Technology</h3>
+          <span class="entry__date">2026</span>
+        </div>
+        <p class="entry__org">Arizona State University · Tempe, AZ</p>
+        <p>
+          Coursework: Cloud Computing, Wireless Communications, Systems Analysis
+          &amp; Design, IT Project Management.
+        </p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Open to IT support, systems, and networking roles in the Chicago area.</p>
+      <ul class="contact__list">
+        <li><a href="mailto:alabdulrazzaq1@gmail.com">alabdulrazzaq1@gmail.com</a></li>
+        <li><a href="https://github.com/AlhasanAl">github.com/AlhasanAl</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 Alhasan Abdulrazzaq · Built with HTML and CSS</p>
+    </footer>
+
+  </main>
 
 </body>
 </html>
