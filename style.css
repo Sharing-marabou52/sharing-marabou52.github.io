@@ -1,54 +1,56 @@
+/* ---- Variables: define colors once, use everywhere ---- */
 :root {
-    --bg: #0d1117;
-    --panel: #161b22;
-    --text: #e6edf3;
-    --accent: #2dd4bf;
+  --bg: #0d1117;
+  --panel: #161b22;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #2dd4bf;
 }
 
-/*---- Rest ----*/
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ---- Reset ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*---- Base ----*/
+/* ---- Base ---- */
 body {
-    font-family: system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/*---- Layout ----*/
+/* ---- Layout ---- */
 header, main, footer {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/*---- Type ----*/
+/* ---- Type ---- */
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
 }
 
 header p {
-    color: var(--muted);
-    font-size: 1.1rem;
+  color: var(--muted);
+  font-size: 1.1rem;
 }
 
 section {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 footer {
-    color: var(--muted);
-    border-top: 1px solid var(--panel);
+  color: var(--muted);
+  border-top: 1px solid var(--panel);
 }
